@@ -1,7 +1,10 @@
 class Calcul {
     constructor() {}
   
-    rpn(expr) {}
+    rpn(expr) {
+
+        return parseInt(expr);
+    }
   }
   
   module.exports = Calcul;
