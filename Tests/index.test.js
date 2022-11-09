@@ -23,9 +23,15 @@ test("Return result addition", (t) => {
 });
 
 test("Return result multiplication", (t) => {
-    const expr = "2 3 *";
-    const calcul = new Calcul();
-    t.equal(calcul.rpn(expr), 6);
-    t.end();
-  });
-  
+  const expr = "2 3 *";
+  const calcul = new Calcul();
+  t.equal(calcul.rpn(expr), 6);
+  t.end();
+});
+
+test("Return result division", (t) => {
+  const expr = "6 3 /";
+  const calcul = new Calcul();
+  t.equal(calcul.rpn(expr), 2);
+  t.end();
+});

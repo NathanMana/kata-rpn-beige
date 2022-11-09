@@ -17,6 +17,7 @@ class Calcul {
         if (op === "+") return parseInt(e1 + e2);
         if (op === "-") return parseInt(e1 - e2);
         if (op === "*") return parseInt(e1 * e2);
+        if (op === "/") return parseInt(e1 / e2);
     }
   }
   
