@@ -21,3 +21,11 @@ test("Return result addition", (t) => {
   t.equal(calcul.rpn(expr), 5);
   t.end();
 });
+
+test("Return result soustraction", (t) => {
+    const expr = "2 3 -";
+    const calcul = new Calcul();
+    t.equal(calcul.rpn(expr), -1);
+    t.end();
+  });
+  
