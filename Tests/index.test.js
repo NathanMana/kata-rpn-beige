@@ -22,6 +22,13 @@ test("Return result addition", (t) => {
   t.end();
 });
 
+test("Return result soustraction", (t) => {
+  const expr = "2 3 -";
+  const calcul = new Calcul();
+  t.equal(calcul.rpn(expr), -1);
+  t.end();
+});
+
 test("Return result multiplication", (t) => {
   const expr = "2 3 *";
   const calcul = new Calcul();
@@ -33,5 +40,12 @@ test("Return result division", (t) => {
   const expr = "6 3 /";
   const calcul = new Calcul();
   t.equal(calcul.rpn(expr), 2);
+  t.end();
+});
+
+test("Multiple operation", (t) => {
+  const expr = "6 3 / 3 -";
+  const calcul = new Calcul();
+  t.equal(calcul.rpn(expr), -1);
   t.end();
 });
