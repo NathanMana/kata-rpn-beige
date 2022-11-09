@@ -1,5 +1,9 @@
-const test = require('tape')
+const test = require("tape");
+const Calcul = require("../index");
 
-test("First test", () =>  {
-    
-})
+test("Return something", (t) => {
+  const expr = "";
+  const calcul = new Calcul();
+  t.equal(calcul.rpn(expr), undefined);
+  t.end();
+});
