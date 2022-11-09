@@ -22,10 +22,10 @@ test("Return result addition", (t) => {
   t.end();
 });
 
-test("Return result soustraction", (t) => {
-    const expr = "2 3 -";
+test("Return result multiplication", (t) => {
+    const expr = "2 3 *";
     const calcul = new Calcul();
-    t.equal(calcul.rpn(expr), -1);
+    t.equal(calcul.rpn(expr), 6);
     t.end();
   });
   
